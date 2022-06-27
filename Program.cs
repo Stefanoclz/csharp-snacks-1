@@ -1,5 +1,20 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+/* Il software chiede all'utente di inserire un numero, se è pari stampa un numero, se dispari stampa il successivo */
+
+int numeroRichiesto = Int32.Parse(Console.ReadLine());
+
+if (numeroRichiesto % 2 == 0)
+{
+    Console.WriteLine("PARI! Il numero inserito è: " + numeroRichiesto);
+} else
+{
+    Console.WriteLine("DISPARI! Il numero successivo a quello dispari è: " + (numeroRichiesto + 1));
+}
+
+
+
+return;
 
 /* Calcola la somma e la media dei numeri da 2 a 10 */
 
