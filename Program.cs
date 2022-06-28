@@ -1,5 +1,30 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+/* Scrivere una funzione per verificare se un numero è pari o dispari.
+Quindi chiedere un numero all'utente e comunicargli se è pari o dispari. */
+
+void OddOrEven(int number)
+{
+    if(number % 2 == 0)
+    {
+        Console.WriteLine("E' pari! hai scelto il numero " + number);
+    } else
+    {
+        Console.WriteLine("E' dispari! hai scelto il numero " + number);
+    }
+}
+
+Console.WriteLine("Scegli un numero per verificare se è pari o dispoari");
+int userNumber = Int32.Parse(Console.ReadLine());
+
+OddOrEven(userNumber);
+
+
+
+
+return;
+
+
 /* Dare la possibilità di inserire due parole.
 Verificare tramite una funzione che le due parole abbiano la stessa
 lunghezza. Se hanno la stessa lunghezza, stamparle entrambe,
@@ -31,11 +56,6 @@ void CheckWords(string first, string second)
 
 
 CheckWords(word1, word2);
-
-
-
-
-
 
 return;
 
