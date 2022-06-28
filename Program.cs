@@ -1,5 +1,44 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+/* Dare la possibilità di inserire due parole.
+Verificare tramite una funzione che le due parole abbiano la stessa
+lunghezza. Se hanno la stessa lunghezza, stamparle entrambe,
+altrimenti stampare la più lunga delle due. */
+
+Console.WriteLine("Inserisci la prima parola");
+string word1 = Console.ReadLine();
+
+Console.WriteLine("Inserisci la seconda parola");
+string word2 = Console.ReadLine();
+
+void CheckWords(string first, string second)
+{
+    if (first.Length == second.Length)
+    {
+        Console.WriteLine("stessa lunghezza! " + first + " " + second);
+    }
+    else
+    {
+        if(second.Length > first.Length)
+        {
+            Console.WriteLine("La parola più lunga è: " + second);
+        } else
+        {
+            Console.WriteLine("La parola più lunga è: " + first);
+        }
+    }
+}
+
+
+CheckWords(word1, word2);
+
+
+
+
+
+
+return;
+
 /* Fai inserire un numero che chiamaeremo N all'utente, genera N array ognuno formato da 10 numeri casuali tra 1 e 100, ogni volta che ne crei uno stampalo a schermo */
 Console.WriteLine("Quanti array vuoi creare?");
 int N = Int32.Parse(Console.ReadLine());
